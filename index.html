@@ -1,18 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI News Summarizer</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naradh AI - News Article Summarizer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>AI-Powered News Summarizer</h1>
-  <input type="text" id="topic" placeholder="Enter a topic (e.g., Technology)">
-  <button onclick="getNews()">Fetch News</button>
+    <header>
+        <h1>Naradh AI</h1>
+        <p>Intelligent News Article Summarization</p>    </header>
 
-  <div id="news-container"></div>
+    <main>
+        <section class="summarizer-section">
+            <h2>Article Summarizer</h2>
+            <textarea id="articleInput" placeholder="Paste your article here..."></textarea>
+            <button id="summarizeBtn">Summarize</button>
+            <div id="summaryResult" class="summary-box"></div>
+            <div id="loadingIndicator" class="loading hidden">Summarizing...</div>
+        </section>
 
-  <script src="script.js"></script>
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <p>Paste any news article into the text area</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <p>Click the summarize button</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <p>AI processes the article using advanced NLP</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <p>Get a concise, accurate summary instantly</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <h2>Why Use Naradh AI?</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <h3>Save Time</h3>
+                    <p>Get key information quickly without reading entire articles</p>
+                </div>
+                <div class="benefit">
+                    <h3>Stay Informed</h3>
+                    <p>Process more news in less time</p>
+                </div>
+                <div class="benefit">
+                    <h3>Accurate Summaries</h3>
+                    <p>Powered by advanced AI technology</p>
+                </div>
+                <div class="benefit">
+                    <h3>Works Offline</h3>
+                    <p>Continue working even without internet</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="indian-news">
+            <h2>Latest Indian News</h2>
+            <div id="newsContainer" class="news-grid"></div>
+        </section>
+
+        <section class="creators">
+            <h2>THIS AI CREATED BY</h2>
+            <div class="creator-grid">
+                <div class="creator-slot">
+                    <div class="image-upload">
+                        <img src="placeholder.jpg" alt="Creator 1">
+                    </div>
+                    <input type="text" placeholder="Creator Name">
+                </div>
+                <div class="creator-slot">
+                    <div class="image-upload">
+                        <img src="placeholder.jpg" alt="Creator 2">
+                    </div>
+                    <input type="text" placeholder="Creator Name">
+                </div>
+                <div class="creator-slot">
+                    <div class="image-upload">
+                        <img src="placeholder.jpg" alt="Creator 3">
+                    </div>
+                    <input type="text" placeholder="Creator Name">
+                </div>
+                <div class="creator-slot">
+                    <div class="image-upload">
+                        <img src="placeholder.jpg" alt="Creator 4">
+                    </div>
+                    <input type="text" placeholder="Creator Name">
+                </div>
+                <div class="creator-slot">
+                    <div class="image-upload">
+                        <img src="placeholder.jpg" alt="Creator 5">
+                    </div>
+                    <input type="text" placeholder="Creator Name">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Naradh AI - Powered by OpenAI and News API</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
