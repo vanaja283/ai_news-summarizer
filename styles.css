@@ -155,7 +155,33 @@ button:hover {
     gap: 1.5rem;
     margin-top: 2rem;
 }
+.guidance h2,
+.creators h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-blue);
+}
 
+.mentor-line {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.mentor-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.mentor-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-blue);
+}
 /* Creators Section */
 .creators h2 {
     text-align: center;
@@ -220,4 +246,5 @@ footer {
         max-width: 250px;
         margin: 0 auto;
     }
+    
 }
