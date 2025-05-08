@@ -1,5 +1,5 @@
 // API Configuration 
-const NEWS_API_KEY = 'apikey';
+const NEWS_API_KEY = 'de3acb398cc5476ba0a5afed09d159f2';
 const OPENAI_API_KEY = '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';
 
 // DOM Elements
